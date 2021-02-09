@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Idris | Ridwan</title>
+</head>
+<body class="font-body bg-primary text-white overflow-x-hidden">
+<!-- Start navbar-->
+<nav class="flex flex-wrap sticky top-0 z-20 bg-secondary shadow-nav items-center pl-8 justify-between md:pl-40 md:pr-16">
+    <div class="flex flex-no-shrink items-center mr-6 py-4 text-grey-darkest">
+        <svg class="h-10 w-10 md:h-12 md:w-12" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 2C0 0.895431 0.895431 0 2 0H46C47.1046 0 48 0.895431 48 2V46C48 47.1046 47.1046 48 46 48H2C0.895431 48 0 47.1046 0 46V2Z" fill="white"/>
+            <path d="M12.4144 30.8945C12.4144 31.369 12.689 31.6817 13.2382 31.8326L14.1428 32.0429C14.6059 32.1831 14.8374 32.4634 14.8374 32.884C14.8374 33.3908 14.5035 33.6442 13.8359 33.6442H5.98535C5.32845 33.6442 5 33.3908 5 32.884C5 32.4634 5.22615 32.1831 5.67844 32.0429L6.59918 31.8326C7.13762 31.6817 7.40685 31.369 7.40685 30.8945V13.7496C7.40685 13.2752 7.13762 12.9625 6.59918 12.8115L5.67844 12.6013C5.22615 12.4611 5 12.1807 5 11.7602C5 11.2534 5.32845 11 5.98535 11H13.8359C14.5035 11 14.8374 11.2534 14.8374 11.7602C14.8374 12.1807 14.6059 12.4611 14.1428 12.6013L13.2382 12.8115C12.689 12.9625 12.4144 13.2752 12.4144 13.7496V30.8945Z" fill="#1A1A1A"/>
+            <path d="M35.8531 18.7799C35.8531 20.0954 35.4762 21.2546 34.7224 22.2574C33.9793 23.2602 32.9455 24.0042 31.621 24.4895L35.6108 30.8783C35.8154 31.2018 36.0201 31.4498 36.2247 31.6224C36.4293 31.7949 36.7093 31.9297 37.0646 32.0267C37.4092 32.1346 37.6408 32.2532 37.7592 32.3826C37.8885 32.512 37.9531 32.6791 37.9531 32.884C37.9531 33.3908 37.6138 33.6442 36.9354 33.6442H30.0541C29.408 33.6442 29.0849 33.3908 29.0849 32.884C29.0849 32.6252 29.241 32.4149 29.5533 32.2532L30.0379 32.1399C30.4472 31.9566 30.5118 31.617 30.2318 31.121L26.9203 25.4437C26.7911 25.4437 26.6619 25.4437 26.5327 25.4437C25.2081 25.4437 24.0181 25.2658 22.9628 24.91V30.8945C22.9628 31.3582 23.2051 31.6709 23.6897 31.8326L24.7881 32.0429C25.0573 32.1399 25.2404 32.2532 25.3373 32.3826C25.4342 32.512 25.4827 32.6791 25.4827 32.884C25.4827 33.3908 25.1489 33.6442 24.4812 33.6442H16.5337C15.8768 33.6442 15.5484 33.3908 15.5484 32.884C15.5484 32.4634 15.7745 32.1831 16.2268 32.0429L17.1476 31.8326C17.686 31.6817 17.9552 31.369 17.9552 30.8945V13.7496C17.9552 13.2752 17.686 12.9625 17.1476 12.8115L16.2268 12.6013C15.7745 12.4611 15.5484 12.1807 15.5484 11.7602C15.5484 11.2534 15.8768 11 16.5337 11H24.5781C26.9903 11 29.0364 11.3343 30.7164 12.0028C32.3963 12.6606 33.6724 13.5771 34.5447 14.7525C35.417 15.917 35.8531 17.2595 35.8531 18.7799ZM22.9628 12.5366V23.4058C23.7704 23.6646 24.6804 23.794 25.6927 23.794C27.2649 23.794 28.4872 23.3788 29.3595 22.5485C30.2425 21.7075 30.6841 20.4728 30.6841 18.8446C30.6841 17.6261 30.4202 16.5424 29.8926 15.5935C29.3756 14.6446 28.6434 13.9006 27.6957 13.3615C26.7588 12.8115 25.655 12.5366 24.3843 12.5366H22.9628Z" fill="#1A1A1A"/>
+            <path d="M41.1247 34C40.3278 34 39.6494 33.7089 39.0894 33.1266C38.5294 32.5335 38.2494 31.8434 38.2494 31.0563C38.2494 30.2475 38.5294 29.5574 39.0894 28.9859C39.6494 28.4144 40.3278 28.1287 41.1247 28.1287C41.9431 28.1287 42.627 28.4144 43.1762 28.9859C43.7254 29.5574 44 30.2475 44 31.0563C44 31.8434 43.7254 32.5335 43.1762 33.1266C42.627 33.7089 41.9431 34 41.1247 34Z" fill="#1A1A1A"/>
+        </svg>
+    </div>
+  
+    <svg id="menu" class="w-16 h-16 md:hidden cursor-pointer pr-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+    
+    <ul id="navbar" class="flex hidden flex-col items-end md:inline-block md:items-start md:flex-row justify-end list-reset m-0 w-full md:w-auto">
+      <li class="md:inline-block">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-white">LinkedIn</a>
+      </li>
+      
+      <li class="md:inline-block">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-white">Resume</a>
+      </li>
+      
+      <li class="md:inline-block">
+        <a href="#" class="block md:inline-block px-4 py-3 no-underline text-grey-darkest hover:text-white">Get in touch</a>
+      </li>
+      
+    </ul>
+</nav>
+<!-- End navbar-->
+
+<!-- Start info -->
+<section class="mt-16 md:mt-40 h-5/6 overflow-x-hidden">
+    <div class="flex flex-wrap pl-8 md:pl-40 md:pr-16 h-full">
+        <div class="my-10 md:mt-10 w-full md:max-w-2xl">
+            <div class="mx-auto md:mx-0 md:pr-20 mb-8">
+                <h1 class="text-4xl md:text-6xl font-name tracking-tighter font-black">
+                   <span class="block bg-clip-text text-transparent bg-gradient-to-br from-judge-100 to-judge-200">Hi. I’m Ridwan.</span> 
+                   <span class="block bg-clip-text leading-normal text-transparent bg-gradient-to-br from-judge-100 to-judge-200">A Designer.</span>
+                </h1>
+            </div>
+            <div class="text-justify pr-6 md:pr-32">
+                <p class="font-normal text-sm-white leading-loose">I am an experienced designer 
+                    with delivering intuitive & functional 
+                    designs for digital products and brands. 
+                    I’m adept at designing for every point 
+                    of user journey from ideation to execution.
+                </p>
+            </div>
+        </div>
+        <div class="mr-12 w-64 h-64 md:w-img md:h-img rounded-lg bg-secondary flex justify-center items-center">
+            <div class="w-52 h-52 md:w-72 md:h-72 rounded-full bg-gradient-to-b from-judge-100 to-judge-200 flex justify-center items-center">
+                <img class="w-11/12 md:w-11/12 rounded-full" src="images/profile.png" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End info -->
+
+<!-- Start eyowo -->
+<section id="eyowo" class="card-section overflow-x-hidden">
+    <div class="card justify-start relative">
+        <div id="eyo-ball" class="h-ball w-ball -right-32 -top-32 absolute bg-opacity-10 hidden filter-blur rounded-full bg-eyo"></div>
+        <div class="lg:w-6/12 lg:relative pl-8 mt-10 md:mt-10 md:pl-20 md:p-20">
+            <div id="eyo-first" class="absolute">
+                <h1 class="font-name font-black text-5xl mb-2">
+                    Eyowo
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Bank on Your phone
+                </p>
+            </div>
+            <div id="eyo-second" class="hidden absolute">
+                <h1 class="font-name font-black text-4xl lg:text-5xl text-eyo mb-2">
+                    Experience Eyowo
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Case study coming soon
+                </p>
+            </div>
+        </div>
+        <div class="w-4/5 lg:w-7/12 md:ml-14 lg:ml-auto lg:mr-10 justify-self-end flex justify-start items-end">
+            <img class="object-contain z-index-10 md:mx-auto" src="images/eyowo.png" alt="eyowo">
+        </div>
+    </div>
+</section>
+<!-- End eyowo -->
+
+
+<!-- Start doktor -->
+<section id="doktor" class="card-section overflow-x-hidden">
+    <div class="card flex-col justify-between items-start relative">
+        <div id="doktor-ball" class="h-ball w-ball -right-32 -top-32 absolute bg-opacity-10 hidden filter-blur rounded-full bg-doktor"></div>
+        <div class="w-full relative pl-8 mt-20 md:mt-10 md:pl-20 md:p-20">
+            <div id="doktor-first" class="absolute">
+                <h1 class="font-name font-black text-5xl mb-2">
+                    Doktor<br class="md:hidden">Connecct
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Quality and adequate healthcare for all 
+                </p>
+            </div>
+            <div id="doktor-second" class="hidden absolute">
+                <h1 class="font-name font-black text-4xl lg:text-5xl text-doktor mb-2">
+                    Experience Doktor<br class="md:hidden">Connecct
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Case study coming soon
+                </p>
+            </div>
+        </div>
+        <div class="w-full px-4 md:mx-auto lg:px-20 lg:ml-auto lg:mr-10 flex justify-start items-end">
+            <img class="object-contain md:mx-auto" src="images/doktor.png" alt="eyowo">
+        </div>
+    </div>
+</section>
+<!-- End doktor -->
+
+<!-- Start cabin -->
+<section id="cabin" class="card-section overflow-x-hidden">
+    <div class="card justify-start relative">
+    <div id="cabin-ball" class="h-ball w-ball -right-32 -top-32 absolute bg-opacity-10 hidden filter-blur rounded-full bg-cabin"></div>
+        <div class="lg:w-6/12 lg:relative pl-8 mt-10 md:mt-8 md:pl-20 md:p-20">
+            <div id="cabin-first" class="absolute">
+                <h1 class="font-name font-black text-5xl mb-2">
+                    Cabin
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Find hostel and roommates
+                </p>
+            </div>
+            <div id="cabin-second" class="hidden absolute">
+                <h1 class="font-name font-black text-4xl lg:text-5xl text-cabin mb-2">
+                    Experience Cabin
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Read Case Study
+                </p>
+            </div>
+        </div>
+        <div class="w-4/5 lg:w-7/12 md:ml-14 lg:ml-auto lg:mr-10 justify-self-end flex justify-start items-end">
+            <img class="object-contain md:mx-auto" src="images/cabin.png" alt="eyowo">
+        </div>
+    </div>
+</section>
+<!-- End cabin -->
+
+<!-- Start Maal -->
+<section id="maal" class="card-section overflow-x-hidden">
+    <div class="card justify-start relative">
+        <div id="maal-ball" class="h-ball w-ball -right-32 -top-32 absolute bg-opacity-10 hidden filter-blur rounded-full bg-maal"></div>
+        <div class="lg:w-6/12 lg:relative pl-8 mt-10 md:mt-8 md:pl-20 md:p-20">
+            <div id="maal-first" class="absolute">
+                <h1 class="font-name font-black text-5xl mb-2">
+                    Maal
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Pay tithe and offering
+                </p>
+            </div>
+            <div id="maal-second" class="hidden absolute">
+                <h1 class="font-name font-black text-4xl lg:text-5xl text-maal mb-2">
+                    Experience Maal
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Read Case Study
+                </p>
+            </div>
+        </div>
+        <div class="w-4/5 lg:w-7/12 md:ml-14 lg:ml-auto lg:mr-10 justify-self-end flex justify-start items-end">
+            <img class="object-contain md:mx-auto" src="images/maal.png" alt="eyowo">
+        </div>
+    </div>
+</section>
+<!-- End Maal -->
+
+
+<!-- Start kiyah -->
+<section id="kiyah" class="card-section overflow-x-hidden">
+    <div class="card flex-col justify-between items-start relative">
+        <div id="kiyah-ball" class="h-ball w-ball -right-32 -top-32 absolute bg-opacity-10 hidden filter-blur rounded-full bg-kiyah block"></div>
+        <div class="w-full relative pl-8 mt-20 md:mt-4 md:pl-20 md:p-20">
+            <div id="kiyah-first" class="absolute">
+                <h1 class="font-name font-black text-5xl mb-2">
+                    Kiyah
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Buy perfume on the go 
+                </p>
+            </div>
+            <div id="kiyah-second" class="hidden absolute">
+                <h1 class="font-name font-black text-4xl lg:text-5xl text-kiyah mb-2">
+                    Experience Kiyah
+                </h1>
+                <p class="font-normal text-sm-white leading-loose">
+                    Read Case Study
+                </p>
+            </div>
+        </div>
+        <div class="w-full md:mt-10 px-4 md:mx-auto lg:px-20 lg:ml-auto lg:mr-10 flex justify-start items-end">
+            <img class="object-contain md:mx-auto" src="images/kiyah.png" alt="eyowo">
+        </div>
+    </div>
+</section>
+<!-- End kiyah -->
+
+
+<!-- Start open -->
+<section class="h-screen overflow-x-hidden">
+    <div class="flex flex-col items-center">   
+        <div class="w-open h-44 xs:ml-52 xs:mb-0 xs:mt-20 ml-32 md:ml-10 mt-10 md:mt-40 mb-6 md:mb-10">
+            <p class="font-name xs:text-4xl text-5xl md:text-6xl leading-loose md:leading-normal bg-clip-text text-transparent bg-gradient-to-br from-judge-100 to-judge-200">
+                I’m  open for opportunities
+            </p>
+        </div>
+        <div class="w-prod xs:px-52 h-16 px-40 md:mx-0 mb-14 md:mb-4 sm:px-44 md:px-0">
+            <p class="font-normal text-sm-white text-justify md:text-normal leading-loose md:flex md:flex-col md:items-center">
+                <span class="md:block">
+                    I’m open  to full-time, contract or part-time oppurtunities in
+                </span>
+                <span class="md:block">
+                    Product design, User Experience Design, Digital Design consult.
+                </span>
+            </p>
+        </div>
+        <div class="flex flex-col md:flex-row xs:pl-16 pl-2 md:pl-0 mr-20 md:mr-0">
+            <p class="my-4 md:my-0 md:mr-20">
+                <svg class="inline-block" width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.85 0C1.26793 0 0 1.33523 0 2.91929V16.0708C0 17.6549 1.26793 19 2.85 19H23.75C25.3321 19 26.6 17.6549 26.6 16.0708V2.91929C26.6 1.33523 25.3321 0 23.75 0H2.85ZM2.98854 1.9H23.6214L13.864 11.1625C13.509 11.4997 13.1118 11.5 12.7557 11.1625L2.98854 1.9ZM1.9 3.48333L8.37187 9.61875L1.9 16.0708V3.48333ZM24.7 3.48333V16.0708L18.2479 9.60887L24.7 3.48333ZM16.8823 10.9151L23.0474 17.1H3.5625L9.74738 10.925L11.4495 12.538C12.4812 13.516 14.1388 13.5175 15.1703 12.538L16.8823 10.9151Z" fill="white"/>
+                </svg>
+                <span class="text-base">Idris.ridwan.abiola@gmail.com</span>
+            </p>
+            <p>
+                <svg class="inline-block" width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.0583 0H5.54167C2.48156 0 0 2.48156 0 5.54167V21.0583C0 24.1184 2.48156 26.6 5.54167 26.6H21.0583C24.1196 26.6 26.6 24.1184 26.6 21.0583V5.54167C26.6 2.48156 24.1196 0 21.0583 0ZM8.86667 21.0583H5.54167V8.86667H8.86667V21.0583ZM7.20417 7.4613C6.13352 7.4613 5.26458 6.58572 5.26458 5.5062C5.26458 4.42668 6.13352 3.5511 7.20417 3.5511C8.27482 3.5511 9.14375 4.42668 9.14375 5.5062C9.14375 6.58572 8.27592 7.4613 7.20417 7.4613ZM22.1667 21.0583H18.8417V14.8472C18.8417 11.1144 14.4083 11.397 14.4083 14.8472V21.0583H11.0833V8.86667H14.4083V10.8229C15.9556 7.95673 22.1667 7.74503 22.1667 13.5671V21.0583Z" fill="white"/>
+                </svg>                    
+                <span class="text-base">Linkedin</span>
+            </p>
+        </div>
+    </div>
+</section>
+<!-- End open -->
+
+<!-- Start footer -->
+<footer class="h-screen overflow-x-hidden">
+    <div class="pl-8 md:pl-40">
+        <div class="mb-20 md:mb-24">
+            <span class="font-name text-xl text-touch tracking-tight font-bold">
+                Stay in touch
+            </span>
+            <div class="mt-10">
+                <span class="text-3xl font-normal mr-10 py-6 block md:inline-block md:mr-20">
+                    LinkedIn
+                </span>
+                <span class="text-3xl font-normal mr-10 py-6 mt:10 md:mt-0 block md:inline-block md:mr-20">
+                    Twitter
+                </span>
+                <span class="text-3xl font-normal block py-6 mt:10 md:mt-0 md:inline-block ">
+                    Email
+                </span>
+            </div>
+        </div>
+        <div class="text-2xl md:text-3xl font-body h-40 flex flex-col justify-between md:block">
+                <span class="font-name font-black">Idris Ridwan Abiola </span>
+                <span class="hidden md:inline-block">–</span> 
+                <span class="font-name font-black block md:inline-block">Product Designer</span>
+                <span class="hidden md:inline-block">-</span>
+                <span>Copyright © 2021</span>
+        </div>
+    </div>
+</footer>
+<!-- End footer -->
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

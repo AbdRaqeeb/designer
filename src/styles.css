@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card-section {
+    @apply ml-8 mr-6 md:ml-40 md:mr-20 my-9 flex justify-center items-center
+}
+
+.card {
+    @apply relative w-small h-small md:h-card md:w-card bg-secondary overflow-hidden shadow-card rounded-card flex flex-wrap
+}
+
+.ball-one {
+    @apply h-ball w-ball -right-32 -top-32 absolute bg-opacity-20 hidden filter-blur rounded-full
+}
