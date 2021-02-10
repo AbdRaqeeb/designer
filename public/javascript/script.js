@@ -90,6 +90,7 @@ maal.addEventListener('mouseleave', function () {
     maalBall.classList.add('hidden');
 });
 
+
 // kiyah 
 const kiyah = document.querySelector('#kiyah');
 const kiyahShow = document.querySelector('#kiyah-first');

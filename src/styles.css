@@ -16,3 +16,7 @@
 .ball-one {
     @apply h-ball w-ball -right-32 -top-32 absolute bg-opacity-20 hidden filter-blur rounded-full
 }
+
+.nav-hover {
+    @apply border-b-2 border-secondary hover:border-white transition duration-150 ease-in-out
+}

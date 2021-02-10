@@ -51,7 +51,8 @@ module.exports = {
         card: '21px'
       },
       screens: {
-        xs: {'max': '320px'}
+        xs: {'max': '320px'},
+        mp: {'max': '375px'}
       }
     },
   },
