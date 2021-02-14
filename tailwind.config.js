@@ -38,7 +38,8 @@ module.exports = {
         small: '426px',
         open: '427px',
         prod: '657px',
-        ball: '45rem'
+        ball: '45rem',
+        big: '1293px'
       },
       height: {
         img: '384px',
@@ -52,7 +53,19 @@ module.exports = {
       },
       screens: {
         xs: {'max': '320px'},
-        mp: {'max': '375px'}
+        mp: {'max': '375px'},
+        'bg': '1380px',
+        'bge': '1400px',
+        'bgt': '1460px',
+        'bgs': '1500px'
+      },
+      margin: {
+        card: '138px'
+      },
+      padding: {
+        card: '11.5rem',
+        bg: '14.6rem',
+        bgm: '10.5rem'
       }
     },
   },
