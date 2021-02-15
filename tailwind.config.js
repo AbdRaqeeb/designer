@@ -60,12 +60,17 @@ module.exports = {
         'bgs': '1500px'
       },
       margin: {
-        card: '138px'
+        card: '138px',
+        fit: '11.5rem',
+        bg: '14.5rem'
       },
       padding: {
         card: '11.5rem',
         bg: '14.6rem',
         bgm: '10.5rem'
+      },
+      maxWidth: {
+        ctn: '68.75rem'
       }
     },
   },

@@ -5,8 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
 .card-section {
-    @apply ml-8 mr-6 md:ml-40 md:mr-20 my-9 flex justify-center items-center
+    @apply ml-8 mr-6 md:ml-36 md:mr-36 bg:ml-40 bge:ml-fit bge:mr-fit bgt:ml-52 bgt:mr-52 bgs:ml-bg bgs:mr-56 my-9 flex justify-center items-center overflow-x-hidden
 }
 
 .card {
